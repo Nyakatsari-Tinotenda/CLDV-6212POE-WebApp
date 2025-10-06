@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Upload Product Image";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-image me-2"></i>Upload Product Image
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <!-- Alert Messages -->
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Success!</strong> @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Error!</strong> @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form asp-action="UploadImage" method="post" enctype="multipart/form-data">
+                        <div class="mb-4">
+                            <label for="imageFile" class="form-label fw-bold">Select Image File</label>
+                            <input class="form-control form-control-lg" type="file" id="imageFile" name="imageFile"
+                                   accept=".jpg,.jpeg,.png,.gif,.bmp,.webp" required>
+                            <div class="form-text">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Supported formats: JPG, JPEG, PNG, GIF, BMP, WebP (Max 10MB)
+                            </div>
+                        </div>
+
+                        <!-- Image Preview -->
+                        <div class="mb-4" id="imagePreview" style="display: none;">
+                            <h6>Image Preview:</h6>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img id="preview" src="#" alt="Preview" class="img-fluid rounded" style="max-height: 300px;">
+                                    <div class="mt-2">
+                                        <strong id="imageName" class="d-block"></strong>
+                                        <small class="text-muted" id="imageSize"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-info-circle me-2"></i>How it works:</h6>
+                            <ul class="mb-0">
+                                <li>Image is uploaded <strong>directly to Azure Blob Storage</strong></li>
+                                <li>Automatic unique filename generation</li>
+                                <li>Fast content delivery via Azure CDN</li>
+                                <li>Secure and scalable storage</li>
+                            </ul>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg" id="uploadButton">
+                                <i class="fas fa-cloud-upload-alt me-1"></i>Upload Directly to Azure Storage
+                            </button>
+                            <div class="d-flex gap-2">
+                                <a href="@Url.Action("Images")" class="btn btn-outline-primary flex-fill">
+                                    <i class="fas fa-eye me-1"></i>View All Images
+                                </a>
+                                <a href="@Url.Action("Index")" class="btn btn-outline-secondary flex-fill">
+                                    <i class="fas fa-arrow-left me-1"></i>Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- JavaScript for Image Preview -->
+<script>
+    document.getElementById('imageFile').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        const preview = document.getElementById('imagePreview');
+        const imageElement = document.getElementById('preview');
+        const imageName = document.getElementById('imageName');
+        const imageSize = document.getElementById('imageSize');
+
+        if (file) {
+            // Check if file is an image
+            if (!file.type.match('image.*')) {
+                alert('Please select a valid image file (JPG, PNG, GIF, etc.)');
+                this.value = '';
+                preview.style.display = 'none';
+                return;
+            }
+
+            // Check file size (10MB limit)
+            if (file.size > 10 * 1024 * 1024) {
+                alert('File size must be less than 10MB');
+                this.value = '';
+                preview.style.display = 'none';
+                return;
+            }
+
+            // Show preview
+            preview.style.display = 'block';
+
+            // Set image preview
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imageElement.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+
+            // Set file info
+            imageName.textContent = file.name;
+            const sizeInMB = (file.size / (1024 * 1024)).toFixed(2);
+            imageSize.textContent = `Size: ${sizeInMB} MB | Type: ${file.type}`;
+        } else {
+            preview.style.display = 'none';
+        }
+    });
+
+    // Show loading state on form submit
+    document.querySelector('form').addEventListener('submit', function() {
+        const button = document.getElementById('uploadButton');
+        button.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Uploading to Azure...';
+        button.disabled = true;
+    });
+</script>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .card-header {
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+    .form-control-lg {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .btn-lg {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    .alert {
+        border-radius: 8px;
+        border: none;
+    }
+
+    #preview {
+        max-width: 100%;
+        border: 3px solid #f8f9fa;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+</style>

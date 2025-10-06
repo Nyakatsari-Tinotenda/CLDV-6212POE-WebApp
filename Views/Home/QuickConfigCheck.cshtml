@@ -1,0 +1,26 @@
+﻿@model Dictionary<string, string>
+@{
+    ViewData["Title"] = "Quick Config Check";
+}
+
+<h2>Quick Configuration Check</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Setting</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td class="@(item.Value.Contains("❌") ? "text-danger" : "text-success")">@item.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Index")" class="btn btn-primary">Back to Home</a>

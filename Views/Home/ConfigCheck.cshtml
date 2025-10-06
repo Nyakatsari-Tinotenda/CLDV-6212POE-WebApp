@@ -1,0 +1,61 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Configuration Check";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4">
+                <i class="fas fa-cog me-2"></i>Configuration Check
+            </h2>
+
+            @foreach (var info in Model)
+            {
+                <div class="alert @(info.Contains("❌") || info.Contains("MISSING") || info.Contains("FAILED") ? "alert-danger" : "alert-success") mb-3">
+                    @if (info.Contains("❌"))
+                    {
+                        <i class="fas fa-times-circle me-2"></i>
+                    }
+                    else if (info.Contains("✅"))
+                    {
+                        <i class="fas fa-check-circle me-2"></i>
+                    }
+                    else if (info.Contains("🔍"))
+                    {
+                        <i class="fas fa-search me-2"></i>
+                    }
+                    else if (info.Contains("🌐"))
+                    {
+                        <i class="fas fa-globe me-2"></i>
+                    }
+                    else if (info.Contains("🔗"))
+                    {
+                        <i class="fas fa-link me-2"></i>
+                    }
+                    else if (info.Contains("👤"))
+                    {
+                        <i class="fas fa-user me-2"></i>
+                    }
+                    else if (info.Contains("📨"))
+                    {
+                        <i class="fas fa-envelope me-2"></i>
+                    }
+                    @info
+                </div>
+            }
+
+            <div class="mt-4">
+                <a href="@Url.Action("TestFunctions")" class="btn btn-info me-2">
+                    <i class="fas fa-vial me-1"></i>Test Functions
+                </a>
+                <a href="@Url.Action("Index")" class="btn btn-primary">
+                    <i class="fas fa-home me-1"></i>Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

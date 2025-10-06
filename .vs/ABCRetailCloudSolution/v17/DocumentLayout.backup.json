@@ -1,0 +1,330 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\uploadimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\uploadimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\images.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\images.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\quickconfigcheck.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\quickconfigcheck.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\testresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\testresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\configcheck.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\configcheck.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\services\\functionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\services\\functionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\uploadcontract.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\uploadcontract.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\contracts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\contracts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\models\\functionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\models\\functionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\sendmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\sendmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\abcretailcloudsolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\abcretailcloudsolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\models\\customerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\models\\customerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\customers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|c:\\users\\lab_services_student\\source\\repos\\abcretailcloudsolution\\abcretailcloudsolution\\views\\home\\addcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C55D91CE-A379-4733-87FA-7A4DE678A76B}|ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj|solutionrelative:abcretailcloudsolution\\views\\home\\addcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SendMessage.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\SendMessage.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\SendMessage.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\SendMessage.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\SendMessage.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T10:55:21.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FunctionService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Services\\FunctionService.cs",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Services\\FunctionService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Services\\FunctionService.cs",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Services\\FunctionService.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAuwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T10:28:52.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\appsettings.json",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\appsettings.json",
+              "RelativeToolTip": "ABCRetailCloudSolution\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-06T09:25:32.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAPcBAAAAAAAAAAAuwB0CAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:17:40.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAqwMcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T09:19:08.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Program.cs",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Program.cs",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:20:56.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Services\\AzureStorageService.cs",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Services\\AzureStorageService.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Services\\AzureStorageService.cs*",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Services\\AzureStorageService.cs*",
+              "ViewState": "AgIAAIQBAAAAAAAAAAAuwKoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:15:55.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadImage.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\UploadImage.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\UploadImage.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\UploadImage.cshtml*",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\UploadImage.cshtml*",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAswK0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T11:52:05.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConfigCheck.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\ConfigCheck.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\ConfigCheck.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\ConfigCheck.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\ConfigCheck.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T13:11:33.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Images.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Images.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\Images.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Images.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\Images.cshtml",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAqwK8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T11:52:42.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UploadContract.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\UploadContract.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\UploadContract.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\UploadContract.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\UploadContract.cshtml",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAqwK0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T11:46:42.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuickConfigCheck.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\QuickConfigCheck.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\QuickConfigCheck.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\QuickConfigCheck.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\QuickConfigCheck.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T13:25:53.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TestResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\TestResults.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\TestResults.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\TestResults.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\TestResults.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T13:22:18.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FunctionResponse.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Models\\FunctionResponse.cs",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Models\\FunctionResponse.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Models\\FunctionResponse.cs",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Models\\FunctionResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T11:09:29.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Contracts.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Contracts.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\Contracts.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Contracts.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\Contracts.cshtml",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAqwOcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T11:42:26.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddCustomer.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\AddCustomer.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\AddCustomer.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\AddCustomer.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\AddCustomer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T09:20:08.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ABCRetailCloudSolution.csproj",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj",
+              "RelativeToolTip": "ABCRetailCloudSolution\\ABCRetailCloudSolution.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-06T09:15:30.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Models\\CustomerProfile.cs",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Models\\CustomerProfile.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Models\\CustomerProfile.cs",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Models\\CustomerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:13:20.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Customers.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Customers.cshtml",
+              "RelativeDocumentMoniker": "ABCRetailCloudSolution\\Views\\Home\\Customers.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\ABCRetailCloudSolution\\ABCRetailCloudSolution\\Views\\Home\\Customers.cshtml",
+              "RelativeToolTip": "ABCRetailCloudSolution\\Views\\Home\\Customers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T09:20:40.84Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

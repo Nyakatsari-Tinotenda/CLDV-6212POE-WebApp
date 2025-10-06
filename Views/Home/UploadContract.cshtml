@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Upload Contract";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-file-upload me-2"></i>Upload Contract Document
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <!-- Alert Messages -->
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Success!</strong> @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Error!</strong> @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form asp-action="UploadContract" method="post" enctype="multipart/form-data">
+                        <div class="mb-4">
+                            <label for="contractFile" class="form-label fw-bold">Select Contract File</label>
+                            <input class="form-control form-control-lg" type="file" id="contractFile" name="contractFile"
+                                   accept=".pdf,.doc,.docx,.txt,.xlsx,.xls,.ppt,.pptx" required>
+                            <div class="form-text">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Supported formats: PDF, Word documents, Excel spreadsheets, PowerPoint, Text files
+                            </div>
+                        </div>
+
+                        <!-- File Preview (JavaScript) -->
+                        <div class="mb-4" id="filePreview" style="display: none;">
+                            <h6>File Preview:</h6>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="fileInfo" class="d-flex align-items-center">
+                                        <i class="fas fa-file-pdf fa-2x text-danger me-3" id="fileIcon"></i>
+                                        <div>
+                                            <strong id="fileName"></strong>
+                                            <div class="text-muted small" id="fileSize"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-info-circle me-2"></i>How it works:</h6>
+                            <ul class="mb-0">
+                                <li>File is uploaded to <strong>Azure Files</strong> via Azure Functions</li>
+                                <li>Secure cloud storage with high availability and durability</li>
+                                <li>Files can be downloaded anytime from the Contracts page</li>
+                                <li>Automatic backup and versioning</li>
+                            </ul>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-info btn-lg" id="uploadButton">
+                                <i class="fas fa-cloud-upload-alt me-1"></i>Upload to Azure Files
+                            </button>
+                            <div class="d-flex gap-2">
+                                <a href="@Url.Action("Contracts")" class="btn btn-outline-primary flex-fill">
+                                    <i class="fas fa-list me-1"></i>View All Contracts
+                                </a>
+                                <a href="@Url.Action("Index")" class="btn btn-outline-secondary flex-fill">
+                                    <i class="fas fa-arrow-left me-1"></i>Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- JavaScript for File Preview -->
+<script>
+    document.getElementById('contractFile').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        const preview = document.getElementById('filePreview');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        const fileIcon = document.getElementById('fileIcon');
+
+        if (file) {
+            // Show preview
+            preview.style.display = 'block';
+
+            // Set file name
+            fileName.textContent = file.name;
+
+            // Set file size
+            const sizeInMB = (file.size / (1024 * 1024)).toFixed(2);
+            fileSize.textContent = `Size: ${sizeInMB} MB`;
+
+            // Set icon based on file type
+            const extension = file.name.split('.').pop().toLowerCase();
+            fileIcon.className = getFileIcon(extension);
+        } else {
+            preview.style.display = 'none';
+        }
+    });
+
+    function getFileIcon(extension) {
+        const iconClasses = 'fas fa-2x me-3 ';
+        switch(extension) {
+            case 'pdf':
+                return iconClasses + 'fa-file-pdf text-danger';
+            case 'doc':
+            case 'docx':
+                return iconClasses + 'fa-file-word text-primary';
+            case 'xls':
+            case 'xlsx':
+                return iconClasses + 'fa-file-excel text-success';
+            case 'ppt':
+            case 'pptx':
+                return iconClasses + 'fa-file-powerpoint text-warning';
+            case 'txt':
+                return iconClasses + 'fa-file-alt text-secondary';
+            default:
+                return iconClasses + 'fa-file text-muted';
+        }
+    }
+
+    // Show loading state on form submit
+    document.querySelector('form').addEventListener('submit', function() {
+        const button = document.getElementById('uploadButton');
+        button.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Uploading...';
+        button.disabled = true;
+    });
+</script>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .card-header {
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+    .form-control-lg {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .btn-lg {
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    .alert {
+        border-radius: 8px;
+        border: none;
+    }
+</style>

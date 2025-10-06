@@ -1,0 +1,232 @@
+﻿@{
+    ViewData["Title"] = "ABC Retail Cloud Solution";
+}
+
+<div class="container-fluid">
+    <!-- Alert Messages -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="text-center mb-5">
+        <h1 class="display-4">ABC Retail Cloud Solution</h1>
+        <p class="lead">Powered by Azure Functions & Cloud Storage</p>
+        <div class="badge bg-primary text-wrap">
+            Serverless Architecture
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Customer Management Card -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-users me-2"></i>Customer Management
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Manage customer profiles using Azure Table Storage via Functions</p>
+                    <div class="mt-auto">
+                        <div class="d-grid gap-2">
+                            <a href="@Url.Action("AddCustomer")" class="btn btn-outline-primary">
+                                <i class="fas fa-plus me-1"></i>Add Customer
+                            </a>
+                            <a href="@Url.Action("Customers")" class="btn btn-outline-secondary">
+                                <i class="fas fa-list me-1"></i>View Customers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <small class="text-muted">Azure Table Storage + Functions</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Images Card -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-images me-2"></i>Product Images
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Upload and manage product images using Azure Blob Storage via Functions</p>
+                    <div class="mt-auto">
+                        <div class="d-grid gap-2">
+                            <a href="@Url.Action("UploadImage")" class="btn btn-outline-success">
+                                <i class="fas fa-upload me-1"></i>Upload Image
+                            </a>
+                            <a href="@Url.Action("Images")" class="btn btn-outline-secondary">
+                                <i class="fas fa-eye me-1"></i>View Images
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <small class="text-muted">Azure Blob Storage + Functions</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Processing Card -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-tasks me-2"></i>Order Processing
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Send order processing messages to Azure Queue Storage via Functions</p>
+                    <div class="mt-auto">
+                        <div class="d-grid gap-2">
+                            <a href="@Url.Action("SendMessage")" class="btn btn-outline-warning">
+                                <i class="fas fa-paper-plane me-1"></i>Send Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <small class="text-muted">Azure Queue Storage + Functions</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contracts Management Card -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-file-contract me-2"></i>Contracts
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Manage contracts and documents using Azure Files via Functions</p>
+                    <div class="mt-auto">
+                        <div class="d-grid gap-2">
+                            <a href="@Url.Action("UploadContract")" class="btn btn-outline-info">
+                                <i class="fas fa-upload me-1"></i>Upload Contract
+                            </a>
+                            <a href="@Url.Action("Contracts")" class="btn btn-outline-secondary">
+                                <i class="fas fa-list me-1"></i>View Contracts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <small class="text-muted">Azure Files + Functions</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- System Status Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">System Architecture</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <i class="fas fa-globe fa-2x text-primary mb-2"></i>
+                                <h6>Web Application</h6>
+                                <small>.NET 9.0 MVC</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <i class="fas fa-bolt fa-2x text-success mb-2"></i>
+                                <h6>Azure Functions</h6>
+                                <small>.NET 8.0 Isolated</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <i class="fas fa-database fa-2x text-warning mb-2"></i>
+                                <h6>Storage Services</h6>
+                                <small>Tables, Blobs, Queues, Files</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <i class="fas fa-server fa-2x text-info mb-2"></i>
+                                <h6>Cloud Hosting</h6>
+                                <small>Azure App Service</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions Section -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <a href="@Url.Action("AddCustomer")" class="btn btn-primary btn-lg w-100 mb-2">
+                                <i class="fas fa-user-plus me-2"></i>Add Customer
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="@Url.Action("UploadImage")" class="btn btn-success btn-lg w-100 mb-2">
+                                <i class="fas fa-image me-2"></i>Upload Image
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="@Url.Action("UploadContract")" class="btn btn-info btn-lg w-100 mb-2">
+                                <i class="fas fa-file-upload me-2"></i>Upload Contract
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    .card {
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .badge {
+        font-size: 0.9em;
+    }
+
+    .btn-lg {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+</style>

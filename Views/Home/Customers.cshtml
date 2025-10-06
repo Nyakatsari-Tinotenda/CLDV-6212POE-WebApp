@@ -1,0 +1,31 @@
+﻿@model List<CustomerProfile>
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<h2>Customer List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.RowKey</td>
+                <td>@customer.Name</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Index")" class="btn btn-primary">Back to Home</a>
